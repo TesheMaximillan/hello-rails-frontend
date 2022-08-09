@@ -4,13 +4,11 @@ import api from '../api/api';
 const GET_RANDOM_MESSAGE = 'hello_rails_react/GET_RANDOM_MESSAGE';
 
 // Action Creator
-const getRandomMessage = () => {
-  return async dispatch => {
-    const response= await api.get('/message/random');
-    const message = response.data;
-    dispatch({ type: GET_RANDOM_MESSAGE, message });
-  };
-}
+const getRandomMessage = () => async (dispatch) => {
+  const response = await api.get('/message/random');
+  const message = response.data;
+  dispatch({ type: GET_RANDOM_MESSAGE, message });
+};
 
 // Reducer
 const reducer = (state = [], action) => {
@@ -20,6 +18,6 @@ const reducer = (state = [], action) => {
     default:
       return state;
   }
-}
+};
 
 export { getRandomMessage, reducer };
