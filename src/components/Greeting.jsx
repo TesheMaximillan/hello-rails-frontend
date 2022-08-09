@@ -1,15 +1,15 @@
-import React, { useEffect } from 'react'
-import { useSelector, useDispatch } from 'react-redux'
-import { getRandomMessage } from '../redux/reducer'
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { getRandomMessage } from '../redux/reducer';
 
 const Greeting = () => {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(getRandomMessage());
   }, []);
 
-  const message = useSelector(state => state.reducer);
+  const message = useSelector((state) => state.reducer);
 
   return (
     <div>
@@ -19,7 +19,7 @@ const Greeting = () => {
         <p>{message.greeting}</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Greeting
+export default Greeting;
