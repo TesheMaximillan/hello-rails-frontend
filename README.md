@@ -9,17 +9,12 @@
 2. Go to the project directory by using `cd university-locator`
 3. run `npm install` to install the necessary packages
 4. run `npm start` to start the project
-5. Open [http://localhost:3000](http://localhost:3001) to view it in your browser.
+5. Open [http://localhost:3001](http://localhost:3001) to view it in your browser.
 
 ## Usage for backend
 
 - Run `rails s` to start the server
 - Open `http://127.0.0.1:3000/` in your browser to use the app
-
-## Pages
-- A home page for displaying list of Universities
-- Details page which shows the details for the university location
-- APIs > [Link](https://services2.arcgis.com/5I7u4SJE1vUr79JC/arcgis/rest/services/UniversityChapters_Public/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=json)
 
 ### Basic Requirements:
 ***
@@ -39,7 +34,7 @@
 
 ## Link to Rails App
 
-[React App](https://github.com/TesheMaximillan/hello-rails-backend)
+[Rails App](https://github.com/TesheMaximillan/hello-rails-backend)
 
 ## Authors
 
